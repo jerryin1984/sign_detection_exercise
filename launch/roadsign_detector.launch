@@ -1,9 +1,9 @@
 <launch>
     <!-- 设置参数 -->
-    <param name="model1_path" value="/home/kal4/kal43_ws/src/roadsign_detector/src/model/model1.onnx"/>
-    <param name="model2_path" value="/home/kal4/kal43_ws/src/roadsign_detector/src/model/model2.onnx"/>
+    <param name="model1_path" value="../model1.onnx"/>
+    <param name="model2_path" value="../model2.onnx"/>
     <param name="depth_scale" value="0.0001"/>
-    <param name="csv_file" value="/home/kal4/kal43_ws/src/roadsign_detector/src/road_signs_info.csv"/>
+    <param name="csv_file" value="../road_signs_info.csv"/>
     <param name="x_min" value="0.25"/>
     <param name="x_max" value="8.8"/>
     <param name="y_min" value="1.7"/>
