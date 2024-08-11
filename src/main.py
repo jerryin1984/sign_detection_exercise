@@ -117,10 +117,10 @@ class RoadsSignDetector:
         # 在程序开始时获取地名输入
         self.target_city = input("ZFJ needs you to type your destination(:：")
 
-        model1_path = rospy.get_param('~model1_path', '/home/kal4/kal43_ws/src/roadsign_detector/src/model/model1.onnx')
-        model2_path = rospy.get_param('~model2_path', '/home/kal4/kal43_ws/src/roadsign_detector/src/model/model2.onnx')
+        model1_path = rospy.get_param('~model1_path', '../model1.onnx')
+        model2_path = rospy.get_param('~model2_path', '../model2.onnx')
         self.depth_scale = rospy.get_param('~depth_scale', 0.0001)
-        self.csv_file = rospy.get_param('~csv_file', '/home/kal4/kal43_ws/src/roadsign_detector/src/road_signs_info.csv')
+        self.csv_file = rospy.get_param('~csv_file', '../road_signs_info.csv')
         self.x_min = rospy.get_param('~x_min', 0.25)
         self.x_max = rospy.get_param('~x_max', 8.8)
         self.y_min = rospy.get_param('~y_min', 1.7)
